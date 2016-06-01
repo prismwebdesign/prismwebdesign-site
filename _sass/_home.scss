@@ -1,0 +1,17 @@
+.members .columns:last-child {
+  float:left;
+}
+
+.milestones {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/computers-on-desk.jpg');
+}
+
+.customers {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/planning.jpeg');
+
+}
+
+.milestones, .customers {
+	color: #fff;
+	background-size:cover;
+}

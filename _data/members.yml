@@ -1,0 +1,20 @@
+- avatar: images/members/ben.jpeg
+  name: Ben Tiffany
+  position: Founder
+  socials:
+    - link: http://twitter.com
+      icon: twitter
+    - link: http://facebook.com
+      icon: facebook
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- avatar: images/members/nathan.jpg
+  name: Nathan Arthur
+  position: Developer
+  socials:
+    - link: http://nathanarthur.com
+      icon: home
+    - link: https://github.com/narthur
+      icon: github-alt
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
