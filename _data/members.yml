@@ -6,8 +6,7 @@
       icon: twitter
     - link: http://facebook.com
       icon: facebook
-  desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+  desc: When not busy summiting the Dardanelles and enjoying breathtaking vistas in the Sierra Nevadas, you'll find me smashing PHP bugs, daydreaming in responsive layouts, normalizing wacky databases, strategizing local market takeovers, and generally making clients happy.
 - avatar: images/members/nathan.jpg
   name: Nathan Arthur
   position: Developer
@@ -16,5 +15,4 @@
       icon: home
     - link: https://github.com/narthur
       icon: github-alt
-  desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+  desc: From inventing LEGO Technic contraptions to designing SimCity 2000 metropolises, my childhood was characterized by the desire to master complex systems. At age 12 a friend introduced me to HTML and CSS, and building technically-excellent and pragmatically-effective websites has been my passion ever since.
