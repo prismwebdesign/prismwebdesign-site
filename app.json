@@ -1,0 +1,13 @@
+{
+  "name": "prismwebdesign-site",
+  "description": "",
+  "scripts": {},
+  "env": {},
+  "formation": {},
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
