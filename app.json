@@ -1,11 +1,22 @@
 {
   "name": "prismwebdesign-site",
-  "description": "",
-  "scripts": {},
+  "description": "Prism Web Design's Portfolio Site",
+  "repository": "https://github.com/prismwebdesign/prismwebdesign.github.io",
+  "scripts": {
+    "postdeploy": "bundle exec jekyll build"
+  },
   "env": {},
-  "formation": {},
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
   "addons": [],
   "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
     {
       "url": "heroku/ruby"
     }
