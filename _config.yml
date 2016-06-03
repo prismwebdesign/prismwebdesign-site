@@ -17,3 +17,5 @@ gems: [jekyll-paginate]
 
 paginate: 3
 paginate_path: "blog/page:num"
+
+exclude: ["app.json", "requirements.txt", "Procfile","Gemfile","Gemfile.lock"]
