@@ -1,0 +1,30 @@
+<div class="full" style="background: #f5f5f5;">
+  <div class="row">
+    <div class="large-12 columns">
+      {% include section-header.html title="Portfolio" %}
+      <div class="spacing"></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
+      </p>
+      <div class="three spacing"></div>
+    </div>
+  </div>
+
+  <div class="mod modGallery">
+    <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+      {% for work in page.works %}
+        <li class="{{ work.klass }}">
+          <a href='{{ work.link_to }}'>
+            <img alt="" src="{{ work.image }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ work.title }}</h3>
+                <p>{{ work.desc }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
