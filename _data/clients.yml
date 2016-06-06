@@ -1,6 +1,8 @@
-- image: images/@stock/client-1.png
-- image: images/@stock/client-2.png
-- image: images/@stock/client-3.png
-- image: images/@stock/client-4.png
-- image: images/@stock/client-5.png
-- image: images/@stock/client-6.png
+- image: images/clients/logo-blue.png
+- image: images/clients/index.png
+  klass: invert
+- image: images/clients/dps-logo-light.png
+- image: images/clients/logo.png
+- image: images/clients/su-logo2.png
+  klass: invert
+- image: images/clients/global-donor-egg-bank-logo.png

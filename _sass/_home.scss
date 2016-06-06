@@ -28,3 +28,21 @@
 .spacing {
 	clear:both;
 }
+
+.customers .slick-initialized .slick-slide {
+  background-color:black;
+  height:180px;
+  margin:10px;
+  padding:20px;
+  display:flex;
+  overflow:hidden;
+
+  &.invert {
+    background-color:white;
+  }
+
+  & img {
+    width:100%;
+    margin: auto;
+  }
+}
