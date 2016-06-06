@@ -1,0 +1,15 @@
+@mixin adaptive-bg($img-handle, $darkness) {
+  background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/480/#{$img-handle});
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/800/#{$img-handle});
+  }
+
+  @media screen and (min-width: 800px) {
+    background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/1400/#{$img-handle});
+  }
+
+  @media screen and (min-width: 1400px) {
+    background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/adaptive/#{$img-handle});
+  }
+}
