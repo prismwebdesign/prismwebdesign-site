@@ -13,12 +13,18 @@ github_username:  prismwebdesign
 # Build settings
 markdown: kramdown
 
-gems: [jekyll-paginate, jekyll/responsive_image]
+gems:
+  - jekyll-paginate
+  - jekyll/responsive_image
+  - jekyll-archives
 
 paginate: 3
 paginate_path: "blog/page:num"
 
 exclude: ["app.json", "requirements.txt", "Procfile","Gemfile","Gemfile.lock", "vendor"]
+
+jekyll-archives:
+  enabled: all
 
 #####################
 # Responsive Images #

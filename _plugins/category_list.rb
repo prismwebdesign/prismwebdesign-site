@@ -9,7 +9,7 @@ module Jekyll
           categories.sort_by { |cat, posts| posts.size }
             .reverse()
             .each do |cat, posts|
-               s << "<li><em>#{posts.size}</em><a href=\"/blog/categories/#{cat}\">#{cat}</a><span style=\"width:#{posts.size * 100 / post_count}%\">bar</span><div class=\"#{cat}\"></div></li>"
+               s << "<li><a href=\"/category/#{cat}\">#{cat}</a> (#{posts.size})</li>".downcase
             end
         end
       rescue => boom
@@ -20,4 +20,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('category_list', Jekyll::CategoryList) 
+Liquid::Template.register_tag('category_list', Jekyll::CategoryList)

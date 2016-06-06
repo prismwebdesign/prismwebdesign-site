@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-9 columns'>
+      <h2>Archive of posts with {{ page.type }} '{{ page.title }}'</h2>
+      <ul class="posts">
+        {% for post in page.posts %}
+          <li>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>`
+      <div class='four spacing'></div>
+    </div>
+    <div class='large-3 columns' id='sidebar'>
+      {% include sidebar.html %}
+      <div class='four spacing'></div>
+    </div>
+  </div>
+</div>
