@@ -29,10 +29,13 @@
 	clear:both;
 }
 
+.customers .slick-slider {
+  overflow:hidden;
+}
+
 .customers .slick-initialized .slick-slide {
   background-color:black;
   height:180px;
-  margin:10px;
   padding:20px;
   display:flex;
   overflow:hidden;
