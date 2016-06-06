@@ -102,22 +102,22 @@ works:
       <div class='gallery-nav'>
         <ul>
           <li class='current'>
-            <a data-cat='all' href='#'>All</a>
+            <a data-cat='all' href='#' data-proofer-ignore>All</a>
           </li>
           <li>
-            <a data-cat='graphic-design' href='#'>Graphic Design</a>
+            <a data-cat='graphic-design' href='#' data-proofer-ignore>Graphic Design</a>
           </li>
           <li>
-            <a data-cat='web-design' href='#'>Web Design</a>
+            <a data-cat='web-design' href='#' data-proofer-ignore>Web Design</a>
           </li>
           <li>
-            <a data-cat='brand' href='#'>Brand</a>
+            <a data-cat='brand' href='#' data-proofer-ignore>Brand</a>
           </li>
           <li>
-            <a data-cat='development' href='#'>Development</a>
+            <a data-cat='development' href='#' data-proofer-ignore>Development</a>
           </li>
           <li>
-            <a data-cat='print' href='#'>Print</a>
+            <a data-cat='print' href='#' data-proofer-ignore>Print</a>
           </li>
         </ul>
       </div>
@@ -127,7 +127,7 @@ works:
         {% for work in page.works %}
           <li class="{{ work.klass }}">
             <a href='{{ work.link_to }}'>
-              <img alt="" src="{{ work.image }}" />
+              <img alt="{{work.title}}" src="{{ work.image }}" />
               <div class='overlay'>
                 <div class='thumb-info'>
                   <h3>{{ work.title }}</h3>

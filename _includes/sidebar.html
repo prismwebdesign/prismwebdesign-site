@@ -37,6 +37,9 @@
 </div>
 <div class='links'>
   <h3>Categories</h3>
+
+  {% category_list %}
+
   <ul>
     <li>
       <a href='#'>Web Design</a>
@@ -61,21 +64,11 @@
 <div class='links'>
   <h3>Recent Posts</h3>
   <ul>
+    {% for recent_post in site.posts limit:5 %}
     <li>
-      <a href='#'>Great quality means a lot to us</a>
+      <a href='{{recent_post.url}}'>{{recent_post.title}}</a>
     </li>
-    <li>
-      <a href='#'>Why you should learn CSS 3</a>
-    </li>
-    <li>
-      <a href='#'>5 steps to a more successful WordPress theme</a>
-    </li>
-    <li>
-      <a href='#'>HTML 5 in real world</a>
-    </li>
-    <li>
-      <a href='#'>Javascript debugging</a>
-    </li>
+    {% endfor %}
   </ul>
 </div>
 <!-- <div class='links'>
