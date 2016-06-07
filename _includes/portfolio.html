@@ -15,7 +15,7 @@
       {% for work in page.works %}
         <li class="{{ work.klass }}">
           <a href='{{ work.link_to }}'>
-            <img alt="" src="{{ work.image }}" />
+            <img alt="{{work.title}}" src="{{ work.image }}" />
             <div class='overlay'>
               <div class='thumb-info'>
                 <h3>{{ work.title }}</h3>

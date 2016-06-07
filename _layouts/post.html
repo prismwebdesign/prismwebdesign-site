@@ -8,21 +8,21 @@ section_id: blog
   <div class='large-12 columns'>
     <div class='mod modBlogPost big'>
       <div class='images'>
+        {% assign counter = 0 %}
         {% for image in page.images %}
-          <div class='image'><img alt="" src="{{site.url}}/{{image}}" /></div>
+          {% assign counter = counter | plus: 1 %}
+          <div class='image'><img alt="{{page.title}} {{counter}}" src="{{site.url}}/{{image}}" /></div>
         {% endfor %}
       </div>
       <div class='content'>
         <p class='info'>
           <span>{{page.date | date: "%B %d, %Y" }}</span>
+          {% if page.author %}
           /
           <span>
             by {{page.author}}
           </span>
-          /
-          <span>
-            <a href="http://prismwebdesign.net{{page.url}}#disqus_thread"># comments</a>
-          </span>
+          {% endif %}
         </p>
         <h3><a href="{{page.url}}">{{page.title}}</a></h3>
         {{ content }}

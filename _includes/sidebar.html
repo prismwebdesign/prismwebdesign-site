@@ -1,38 +1,16 @@
 <div class='links'>
   <h3>Archives</h3>
   <ul>
-    <li>
-      <a href='#'>December 2011</a>
-      <span>(2)</span>
-    </li>
-    <li>
-      <a href='#'>November 2011</a>
-      <span>(4)</span>
-    </li>
-    <li>
-      <a href='#'>October 2011</a>
-      <span>(1)</span>
-    </li>
-    <li>
-      <a href='#'>September 2011</a>
-      <span>(3)</span>
-    </li>
-    <li>
-      <a href='#'>July 2011</a>
-      <span>(5)</span>
-    </li>
-    <li>
-      <a href='#'>June 2011</a>
-      <span>(3)</span>
-    </li>
-    <li>
-      <a href='#'>May 2011</a>
-      <span>(6)</span>
-    </li>
-    <li>
-      <a href='#'>April 2011</a>
-      <span>(1)</span>
-    </li>
+    {% assign counter = 0 %}
+    {% for post in site.posts %}
+    	{% assign thisyear = post.date | date: "%B %Y" %}
+    	{% assign prevyear = post.previous.date | date: "%B %Y" %}
+    	{% assign counter = counter | plus: 1 %}
+    	{% if thisyear != prevyear %}
+    		<li><a href="/{{ post.date | date: "%Y" }}/{{ post.date | date: "%m"}}/">{{ thisyear }} ({{ counter }})</a></li>
+        {% assign counter = 0 %}
+    	{% endif %}
+    {% endfor %}
   </ul>
 </div>
 <div class='links'>
