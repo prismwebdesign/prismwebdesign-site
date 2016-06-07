@@ -17,7 +17,7 @@
           <a href='{{ work.link_to }}'>
             {% responsive_image_block %}
                 path: {{ work.image }}
-                alt: {{ work.title }}
+                alt: {{ work.title | remove: "#" }}
             {% endresponsive_image_block %}
             <div class='overlay'>
               <div class='thumb-info'>
