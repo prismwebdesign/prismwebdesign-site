@@ -9,6 +9,14 @@
 	color:black;
 }
 
+.modGallery ul.gallery li {
+}
+
+.modGallery ul.gallery li a {
+  height: 0;
+  padding-bottom: 100%;
+}
+
 // Tools
 @import "mixins";
 
