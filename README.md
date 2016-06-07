@@ -1,6 +1,6 @@
 # prismwebdesign-site
 
-![Build Status](https://travis-ci.org/prismwebdesign/prismwebdesign-site.svg?branch=master)](https://travis-ci.org/prismwebdesign/prismwebdesign-site)
+![Build Status](https://travis-ci.org/prismwebdesign/prismwebdesign-site.svg?branch=master)
 
 ## Docs
 
