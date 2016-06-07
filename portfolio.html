@@ -127,7 +127,10 @@ works:
         {% for work in page.works %}
           <li class="{{ work.klass }}">
             <a href='{{ work.link_to }}'>
-              <img alt="{{work.title}}" src="{{ work.image }}" />
+              {% responsive_image_block %}
+                  path: {{ work.image }}
+                  alt: {{ work.title }}
+              {% endresponsive_image_block %}
               <div class='overlay'>
                 <div class='thumb-info'>
                   <h3>{{ work.title }}</h3>
