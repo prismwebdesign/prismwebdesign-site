@@ -1,6 +1,7 @@
 # prismwebdesign-site
 
-![Build Status](https://travis-ci.org/prismwebdesign/prismwebdesign-site.svg?branch=master)
+[![Build Status](https://travis-ci.org/prismwebdesign/prismwebdesign-site.svg?branch=master)](https://travis-ci.org/prismwebdesign/prismwebdesign-site)
+[![Code Climate](https://codeclimate.com/github/prismwebdesign/prismwebdesign-site/badges/gpa.svg)](https://codeclimate.com/github/prismwebdesign/prismwebdesign-site)
 
 ## Docs
 
