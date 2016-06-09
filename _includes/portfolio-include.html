@@ -12,7 +12,7 @@
 
   <div class="mod modGallery">
     <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-      {% for work in page.works %}
+      {% for work in site.data.works %}
         <li class="{{ work.klass }}">
           <a href='{{ work.link_to }}'>
             {% responsive_image_block %}

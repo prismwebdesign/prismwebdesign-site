@@ -1,0 +1,39 @@
+- image: images/portfolio/proxy-server.png
+  title: ProxyServer.com
+  link_to: portfolio-item.html
+  desc: Web Development
+
+- image: images/portfolio/goalminded.png
+  title: GoalMinded.com
+  link_to: portfolio-item.html
+  desc: Web Development
+
+- image: images/portfolio/visioncritical.png
+  title: "#ILoveCustomers Campaign"
+  link_to: portfolio-item.html
+  desc: Web Development
+
+- image: images/portfolio/evidence-module.png
+  title: Evidence Management System
+  link_to: portfolio-item.html
+  desc: Web Development
+
+- image: images/portfolio/iloverewards.png
+  title: Maybank Rewards Microsite
+  link_to: portfolio-item.html
+  desc: Web Development
+
+- image: images/portfolio/small-business.png
+  title: Small Business Websites
+  link_to: portfolio-item.html
+  desc: Web Development
+
+- image: images/portfolio/paradise-acres-market.png
+  title: eCommerce Modifications
+  link_to: portfolio-item.html
+  desc: Web Development
+
+- image: images/portfolio/crane.jpeg
+  title: "[ Your Project Here ]"
+  link_to: https://prismwebdesign.acuityscheduling.com/schedule.php
+  desc: Click to Schedule a Free Consult
