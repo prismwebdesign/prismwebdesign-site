@@ -1,0 +1,17 @@
+{% assign stars = include.rating | floor %}
+{% assign stars_o = 5 | minus: include.rating | floor %}
+
+{% assign floored = include.rating | floor %}
+{% assign remainder = include.rating | minus: floored %}
+
+{% for i in (1..stars)%}
+<i class="fa fa-star" aria-hidden="true"></i>
+{% endfor %}
+
+{% if remainder != 0 %}
+<i class="fa fa-star-half-o" aria-hidden="true"></i>
+{% endif %}
+
+{% for i in (1..stars_o)%}
+<i class="fa fa-star-o" aria-hidden="true"></i>
+{% endfor %}

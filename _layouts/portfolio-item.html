@@ -1,0 +1,102 @@
+---
+layout: default
+section_id: portfolio
+---
+
+
+<div class='full parallax portfolio'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our portfolio" tagline="Have a look at our works" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% assign count = 0 %}
+          {% for image in page.images %}
+          {% assign count = count | plus: 1 %}
+          {% assign alt = page.title | remove: "#" | remove: "[" | remove: "]" | append: count %}
+          <div class='slide'>
+            {% responsive_image_block %}
+                path: {{image}}
+                alt: {{alt}}
+            {% endresponsive_image_block %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='large-8 columns'>
+      <h3>{{page.title}}</h3>
+      <p>{{page.desc}}</p>
+      {% if page.review %}
+      <div class='spacing'></div>
+      <h3>Client Review</h3>
+      <p>{{page.review}}</p>
+      {% endif %}
+      <div class='spacing'></div>
+      <h3>Ready to get your own project on the road?</h3>
+      <a class='button small' href='{{site.consult_url}}'>Schedule a free consult</a>
+      <div class='spacing'></div>
+    </div>
+
+
+    <div class='large-4 columns'>
+      {% if page.project_url %}
+      <a class='button small' href='{{page.project_url}}' target="_blank">Visit website</a>
+      {% endif %}
+
+      <ul class='info'>
+        {% if page.date %}
+        <li><strong>Date:</strong> {{page.date}}</li>
+        {% endif %}
+
+        {% if page.category %}
+        <li><strong>Category:</strong> {{page.category}}</li>
+        {% endif %}
+
+        {% if page.technologies %}
+        <li><strong>Technologies:</strong> {{page.technologies}}</li>
+        {% endif %}
+      </ul>
+
+      {% if page.rating %}
+      <div class='spacing'></div>
+      <table><tbody>
+        <tr><td>Over-all</td><td>{% include stars.html rating=page.rating.overall %}</td></tr>
+        <tr><td>Skills</td><td>{% include stars.html rating=page.rating.skills %}</td></tr>
+        <tr><td>Availability</td><td></strong> {% include stars.html rating=page.rating.availability %}</td></tr>
+        <tr><td>Communication</td><td></strong> {% include stars.html rating=page.rating.communication %}</td></tr>
+        <tr><td>Quality</td><td>{% include stars.html rating=page.rating.quality %}</td></tr>
+        <tr><td>Deadlines</td><td>{% include stars.html rating=page.rating.deadlines %}</td></tr>
+        <tr><td>Cooperation</td><td>{% include stars.html rating=page.rating.cooperation %}</td></tr>
+      </table></tbody>
+      {% endif %}
+
+      <!--
+      <div class='spacing'></div>
+      <a href='' title='previous'>
+        <i class='icon-left-open'></i>
+      </a>
+      <a href='portfolio.html' title='back to work list'>
+        <i class='icon-layout'></i>
+      </a>
+      <a href='' title='next'>
+        <i class='icon-right-open'></i>
+      </a>
+      -->
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

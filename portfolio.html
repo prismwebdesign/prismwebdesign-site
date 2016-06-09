@@ -45,9 +45,9 @@ section_id: portfolio
 
         {% for work in site.data.works %}
           <li class="{{ work.klass }}">
-            <a href='{{ work.link_to }}'>
+            <a href='/portfolio/{{ work.title | downcase | replace: ' ', '-' | remove: '#' | append: '.html' }}'>
               {% responsive_image_block %}
-                  path: {{ work.image }}
+                  path: {{ work.images }}
                   alt: {{ work.title | remove: "#" }}
               {% endresponsive_image_block %}
               <div class='overlay'>
