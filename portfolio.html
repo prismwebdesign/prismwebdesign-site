@@ -33,7 +33,7 @@ section_id: portfolio
             <a data-cat='brand' href='#' data-proofer-ignore>Brand</a>
           </li>
           <li>
-            <a data-cat='development' href='#' data-proofer-ignore>Development</a>
+            <a data-cat='web-development' href='#' data-proofer-ignore>Web Development</a>
           </li>
           <li>
             <a data-cat='print' href='#' data-proofer-ignore>Print</a>
@@ -41,26 +41,7 @@ section_id: portfolio
         </ul>
       </div>
 
-      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
-
-        {% for work in site.data.works %}
-          <li class="{{ work.klass }}">
-            <a href='/portfolio/{{ work.title | downcase | replace: ' ', '-' | remove: '#' | append: '.html' }}'>
-              {% responsive_image_block %}
-                  path: {{ work.images }}
-                  alt: {{ work.title | remove: "#" }}
-              {% endresponsive_image_block %}
-              <div class='overlay'>
-                <div class='thumb-info'>
-                  <h3>{{ work.title }}</h3>
-                  <p>{{ work.desc }}</p>
-                </div>
-              </div>
-            </a>
-          </li>
-        {% endfor %}
-
-      </ul>
+      {% include portfolio-gallery.html %}
 
     </div>
   </div>

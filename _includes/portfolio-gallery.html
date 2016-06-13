@@ -1,0 +1,19 @@
+<ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+  {% for work in site.data.works %}
+    {% assign category_klass = work.category | downcase | replace: ' ', '-' %}
+    <li class="{{ category_klass }} {{ work.klass }}">
+      <a href='/portfolio/{{ work.title | downcase | replace: ' ', '-' | remove: '#' | append: '.html' }}'>
+        {% responsive_image_block %}
+            path: {{ work.images }}
+            alt: {{ work.title | remove: "#" }}
+        {% endresponsive_image_block %}
+        <div class='overlay'>
+          <div class='thumb-info'>
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.category }}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
