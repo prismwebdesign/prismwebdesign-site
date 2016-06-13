@@ -20,6 +20,9 @@
   category: Web Development
   technologies: javascript, gruntjs, git, jquery, html5, bootstrap, php, symfony
   project_url: http://www.goalminded.com
+  review: Ben has been an amazing find! He operates at the highest level of professionalism, is very responsive, communicates clearly and takes initiative to understand and complete complex tasks. Ben integrated seamlessly with our dev team and within a short time was accelerating the development of complex features for a startup product based on the Symfony II framework. It's been a pleasure working with Ben and we'll continue to work with him in the future. From myself and the team we highly recommend Ben's work. Thanks Ben!
+  rating:
+    overall: 5.0
 
 - images: images/portfolio/visioncritical.png
   title: "#ILoveCustomers Campaign"
