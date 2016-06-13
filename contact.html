@@ -18,19 +18,12 @@ section_id: contact
       <div class='medium-8 columns'>
         <div class='form'>
           <div class='row'>
-            <form id='contact_form' method='POST'>
-              <div class='large-12 columns'>
-                <p id='thanks' style='display: none;'>
-                  Thanks for contacting us, we'll be in touch soon!
-                </p>
-              </div>
-              <div class='medium-12 columns'>
-                <input class='required' name='name' placeholder='NAME' type='text'>
-                <input class='required email' name='email' placeholder='EMAIL' type='text'>
-                <input class='required' name='subject' placeholder='SUBJECT' type='text'>
-                <textarea class='required' name='message' placeholder='MESSAGE'></textarea>
-                <input class='button white' type='submit'>
-              </div>
+            <form action="https://formspree.io/{{site.email}}"
+                  method="POST">
+                <input class='required' type="text" name="name" placeholder="Name" required>
+                <input class='required email' type="email" name="_replyto" placeholder="Email" required>
+                <textarea class='required' rows="5" name="message" placeholder="Message" required></textarea>
+                <input class="button white" type="submit" value="Send">
             </form>
           </div>
         </div>
@@ -38,14 +31,14 @@ section_id: contact
       </div>
       <div class='medium-4 columns'>
         <div class='contact-details'>
-          <h4>Our location:</h4>
+          <h4>Location:</h4>
           <p>41 Dean Street, London, UK</p>
-          <h4>Our Phone:</h4>
+          <h4>Phone:</h4>
           <p>+86 (03) 9810 4612</p>
           <h4>Fax:</h4>
           <p>+6102 236338 5456</p>
-          <h4>Our Email:</h4>
-          <p>info@devoll-team.com</p>
+          <h4>Email:</h4>
+          <p>{{site.email}}</p>
         </div>
       </div>
     </div>
