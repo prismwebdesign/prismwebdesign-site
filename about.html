@@ -12,12 +12,10 @@ skills:
   - title: Branding
     percentage: 61
 testimonials:
-  - quote: Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est.
-    author: David White, Designer at Huglab
-  - quote: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
-    author: David White, Designer at Huglab
-  - quote: Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est.
-    author: David White, Designer at Huglab
+  - quote: Ben was great. He worked well with our existing team and brought a lot of good ideas and execution to the table. Will hire again when he has more time in his schedule.
+    author: ProxyServer.com
+  - quote: Ben has been an amazing find! He operates at the highest level of professionalism, is very responsive, communicates clearly and takes initiative to understand and complete complex tasks.
+    author: GoalMinded.com
 ---
 
 <div class='full parallax' style='background-image: url(images/@stock/about-us.jpg); color: #fff;'>
@@ -55,37 +53,8 @@ testimonials:
   </div>
 </div>
 
-
-<div class='full'>
-  <div class='row'>
-    {% for member in site.data.members %}
-      <div class='small-6 medium-3 large-3 columns'>
-        <div class='mod modTeamMember'>
-          <div class='member'>
-            <img class="avatar" alt="{{member.name}}" src="{{ member.avatar }}" />
-            <div class='overlay'>
-              <div class='intro'>
-                <h3>{{member.name}}</h3>
-                <p>{{member.position}}</p>
-                <ul class='socials'>
-                  {% for social in member.socials %}
-                    <li>
-                      <a href='{{social.link}}'>
-                        <i class='fa fa-{{social.icon}}'></i>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <p class='centered-text'>{{member.desc}}</p>
-          <div class='two spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+<div class='two spacing'></div>
+{% include members-listing.html %}
 
 
 <div class='full parallax' style='background: #f5f5f5'>
@@ -115,7 +84,7 @@ testimonials:
                   <div class='two spacing'></div>
                 </div>
               {% endfor %}
-            </div>
+            </div><div class='two spacing'></div>
           </div>
           <div class='spacing'></div>
         </div>
