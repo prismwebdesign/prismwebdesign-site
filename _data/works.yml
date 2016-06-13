@@ -47,10 +47,12 @@
   title: Small Business Websites
   desc: The site in front is a basic 4 page site I created for a construction company using the Joomla! CMS. The site in back is a pre-existing Wordpress website that I added a custom form to, as well as fixing several bugs in the layout and contact form.
   project_url: http://jetiffanyandsons.com
+  category: Web Development
 
 - images: images/portfolio/paradise-acres-market.png
   title: eCommerce Modifications
   desc: I'm mainly a support tech for this eCommerce website. When the owners have problems, they ask me to fix them.
+  category: Web Development
 
 - images: images/portfolio/clean-code.png
   title: Clean Code Samples
