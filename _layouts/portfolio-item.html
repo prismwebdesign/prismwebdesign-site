@@ -76,12 +76,12 @@ section_id: portfolio
       <table><tbody>
         <tr><td>Over-all</td><td>{% include stars.html rating=page.rating.overall %}</td></tr>
         <tr><td>Skills</td><td>{% include stars.html rating=page.rating.skills %}</td></tr>
-        <tr><td>Availability</td><td></strong> {% include stars.html rating=page.rating.availability %}</td></tr>
-        <tr><td>Communication</td><td></strong> {% include stars.html rating=page.rating.communication %}</td></tr>
+        <tr><td>Availability</td><td> {% include stars.html rating=page.rating.availability %}</td></tr>
+        <tr><td>Communication</td><td> {% include stars.html rating=page.rating.communication %}</td></tr>
         <tr><td>Quality</td><td>{% include stars.html rating=page.rating.quality %}</td></tr>
         <tr><td>Deadlines</td><td>{% include stars.html rating=page.rating.deadlines %}</td></tr>
         <tr><td>Cooperation</td><td>{% include stars.html rating=page.rating.cooperation %}</td></tr>
-      </table></tbody>
+      </tbody></table>
       {% endif %}
 
       <!--
