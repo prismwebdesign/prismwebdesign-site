@@ -60,6 +60,12 @@ responsive_image:
     - width: 800
     - width: 1400
       quality: 90
+    - width: 2400
+      quality: 70
+    - width: 3000
+      quality: 60
+    - width: 5120
+      quality: 60
 
   # [Optional, Default: assets]
   # The base directory where assets are stored. This is used to determine the

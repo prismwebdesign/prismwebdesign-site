@@ -1,15 +1,27 @@
 @mixin adaptive-bg($img-handle, $darkness) {
   background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/480/#{$img-handle});
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/800/#{$img-handle});
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 801px) {
     background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/1400/#{$img-handle});
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1401px) {
+    background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/2400/#{$img-handle});
+  }
+
+  @media screen and (min-width: 2401px) {
+    background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/3000/#{$img-handle});
+  }
+
+  @media screen and (min-width: 3001px) {
+    background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/resized/5120/#{$img-handle});
+  }
+
+  @media screen and (min-width: 5121px) {
     background-image: linear-gradient( rgba(0, 0, 0, $darkness), rgba(0, 0, 0, $darkness) ), url(/images/adaptive/#{$img-handle});
   }
 }
