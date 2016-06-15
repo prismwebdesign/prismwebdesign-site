@@ -3,18 +3,18 @@
 }
 
 .hero-shot {
-  @include adaptive-bg('planning.jpeg', .5);
+  @include adaptive-bg('planning.jpeg', 7360, .5);
 	& h1 {
 		color:white;
 	}
 }
 
 .milestones {
-  @include adaptive-bg('computers-on-desk.jpg', .5);
+  @include adaptive-bg('computers-on-desk.jpg', 5760, .5);
 }
 
 .customers {
-  @include adaptive-bg('glass-roof.jpeg', .5);
+  @include adaptive-bg('glass-roof.jpeg', 4164, .5);
 }
 
 .intro h3 {
