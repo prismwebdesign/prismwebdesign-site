@@ -35,6 +35,9 @@ page_gen:
     dir: 'portfolio'
     extension: 'html'
 
+sass:
+  style: compressed
+
 #####################
 # Responsive Images #
 #####################
