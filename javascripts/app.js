@@ -745,10 +745,10 @@ jQuery(document).foundation();
   })
 })(Tc.$);
 (function($) {
-  Tc.Module.SectionHeader = Tc.Module.extend({    
+  Tc.Module.SectionHeader = Tc.Module.extend({
     init: function($ctx, sandbox, modId) {
       this._super($ctx, sandbox, modId);
-    },    
+    },
     dependencies: function() {
     },
     onBinding: function() {
@@ -788,14 +788,12 @@ jQuery(document).foundation();
 
       $('.items', $ctx).slick({
         autoplay: true,
-        pauseOnHover: false,
-        dots: show_dots,
-        speed: 1500,
+        pauseOnHover: true,
+        dots: true,
+        speed: 3500,
         arrows: false
       });
 
     }
   })
 })(Tc.$);
-
-
