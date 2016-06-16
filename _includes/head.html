@@ -13,7 +13,6 @@
   <link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | prepend:site.baseurl }}">
   <script src="{{ "/javascripts/libs.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script>
-    // terrificjs bootstrap
     (function($) {
         $(document).ready(function() {
             var $page = $('body');
@@ -21,7 +20,7 @@
               dependencyPath: {
                 plugin: 'javascripts/'
               }
-            }
+            };
             var application = new Tc.Application($page, config);
             application.registerModules();
             application.start();
