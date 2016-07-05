@@ -1,6 +1,3 @@
-- name: Home
-  path: index.html
-  section_id: home
-- name: Contact
-  path: contact.html
-  section_id: contact
+#- name: Home
+#  path: index.html
+#  section_id: home

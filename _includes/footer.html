@@ -9,14 +9,6 @@
       </h1>
       <p>©{{ 'now' | date: "%Y" }} Prism Web Design, LLC. All rights reserved.</p>
       <div class='spacing'></div>
-      <div class='links'>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class='spacing'></div>
     </div>
     <div class='large-6 medium-6 columns'>
       <div class='spacing'></div>
@@ -37,26 +29,13 @@
       </ul>
       <div class='spacing'></div>
       <ul class='socials'>
+        {% for account in site.accounts %}
         <li>
-          <a href='http://facebook.com'>
-            <i class='fa fa-facebook'></i>
+          <a href='{{ account.url }}' title='{{ account.name }}'>
+            <i class='fa fa-{{ account.icon }}'></i>
           </a>
         </li>
-        <li>
-          <a href='http://twitter.com'>
-            <i class='fa fa-twitter'></i>
-          </a>
-        </li>
-        <li>
-          <a href='http://dribbble.com'>
-            <i class='fa fa-dribbble'></i>
-          </a>
-        </li>
-        <li>
-          <a href='http://tumblr.com'>
-            <i class='fa fa-tumblr'></i>
-          </a>
-        </li>
+        {% endfor %}
       </ul>
       <div class='spacing'></div>
     </div>

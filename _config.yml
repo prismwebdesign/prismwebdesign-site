@@ -12,6 +12,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: macwebdzyne
 github_username:  prismwebdesign
 consult_url: https://prismwebdesign.acuityscheduling.com/schedule.php
+include_header: false
+accounts:
+  - name: Twitter
+    icon: twitter
+    url: https://twitter.com/macwebdzyne
+  - name: GitHub
+    icon: github-alt
+    url: https://github.com/prismwebdesign/
 
 # Build settings
 markdown: kramdown
