@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/fontello.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | prepend:site.baseurl }}">
+
+  <script src="https://use.fontawesome.com/06508dc90a.js"></script>
   <script src="{{ "/javascripts/libs.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script>
-    // terrificjs bootstrap
     (function($) {
         $(document).ready(function() {
             var $page = $('body');
@@ -21,7 +21,7 @@
               dependencyPath: {
                 plugin: 'javascripts/'
               }
-            }
+            };
             var application = new Tc.Application($page, config);
             application.registerModules();
             application.start();

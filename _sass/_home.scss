@@ -3,18 +3,18 @@
 }
 
 .hero-shot {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/planning.jpeg');
+  @include adaptive-bg('planning.jpeg', 7360, .5);
 	& h1 {
 		color:white;
 	}
 }
 
 .milestones {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/computers-on-desk.jpg');
+  @include adaptive-bg('computers-on-desk.jpg', 5760, .5);
 }
 
 .customers {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/glass-roof.jpeg');
+  @include adaptive-bg('glass-roof.jpeg', 4164, .5);
 }
 
 .intro h3 {
@@ -27,4 +27,30 @@
 
 .spacing {
 	clear:both;
+}
+
+.customers .slick-slider {
+  overflow:hidden;
+}
+
+.customers .slick-initialized .slick-slide {
+  background-color:black;
+  height:180px;
+  padding:20px;
+  display:flex;
+  overflow:hidden;
+
+  &.invert {
+    background-color:white;
+  }
+
+  & img {
+    width:100%;
+    margin: auto;
+  }
+
+  &.tall-logo img {
+    width:auto;
+    height:100%;
+  }
 }

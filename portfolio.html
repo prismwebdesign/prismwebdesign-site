@@ -2,94 +2,13 @@
 layout: default
 title: Portfolio
 section_id: portfolio
-works:
-  - image: images/@stock/work-1.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/work-2.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design print
-    desc: Design &amp; Development
-  - image: images/@stock/work-3.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: brand
-    desc: Design &amp; Development
-  - image: images/@stock/work-4.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: development
-    desc: Design &amp; Development
-  - image: images/@stock/work-5.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: print brand
-    desc: Design &amp; Development
-  - image: images/@stock/work-6.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design
-    desc: Design &amp; Development
-  - image: images/@stock/work-7.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design
-    desc: Design &amp; Development
-  - image: images/@stock/work-8.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/work-1.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: development print
-    desc: Design &amp; Development
-  - image: images/@stock/work-2.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: brand
-    desc: Design &amp; Development
-  - image: images/@stock/work-3.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: web-design
-    desc: Design &amp; Development
-  - image: images/@stock/work-4.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: print
-    desc: Design &amp; Development
-  - image: images/@stock/work-5.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/work-6.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: development
-    desc: Design &amp; Development
-  - image: images/@stock/work-7.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: print
-    desc: Design &amp; Development
-  - image: images/@stock/work-8.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    klass: graphic-design
-    desc: Design &amp; Development
 ---
 
 
-<div class='full parallax' style='background-image: url(images/@stock/portfolio-header-bg.jpg); color: #fff;'>
+<div class='full parallax portfolio'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="Our portfolio" tagline="Have a look at our works" color="#fff" class="big" %}
+      {% include section-header.html title="Portfolio" color="#fff" class="big" %}
     </div>
   </div>
   <div class='four spacing'></div>
@@ -102,43 +21,27 @@ works:
       <div class='gallery-nav'>
         <ul>
           <li class='current'>
-            <a data-cat='all' href='#'>All</a>
+            <a data-cat='all' href='#' data-proofer-ignore>All</a>
           </li>
           <li>
-            <a data-cat='graphic-design' href='#'>Graphic Design</a>
+            <a data-cat='graphic-design' href='#' data-proofer-ignore>Graphic Design</a>
           </li>
           <li>
-            <a data-cat='web-design' href='#'>Web Design</a>
+            <a data-cat='web-design' href='#' data-proofer-ignore>Web Design</a>
           </li>
           <li>
-            <a data-cat='brand' href='#'>Brand</a>
+            <a data-cat='brand' href='#' data-proofer-ignore>Brand</a>
           </li>
           <li>
-            <a data-cat='development' href='#'>Development</a>
+            <a data-cat='web-development' href='#' data-proofer-ignore>Web Development</a>
           </li>
           <li>
-            <a data-cat='print' href='#'>Print</a>
+            <a data-cat='print' href='#' data-proofer-ignore>Print</a>
           </li>
         </ul>
       </div>
 
-      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
-
-        {% for work in page.works %}
-          <li class="{{ work.klass }}">
-            <a href='{{ work.link_to }}'>
-              <img alt="" src="{{ work.image }}" />
-              <div class='overlay'>
-                <div class='thumb-info'>
-                  <h3>{{ work.title }}</h3>
-                  <p>{{ work.desc }}</p>
-                </div>
-              </div>
-            </a>
-          </li>
-        {% endfor %}
-
-      </ul>
+      {% include portfolio-gallery.html %}
 
     </div>
   </div>

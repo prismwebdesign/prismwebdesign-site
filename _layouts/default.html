@@ -1,13 +1,27 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html>
 
   {% include head.html %}
 
   <body>
-
+    {% if site.include_header %}
     {% include header.html %}
+    {% endif %}
 
     <div id='main' role='main'>
+      {% if site.include_header == false %}
+      <div class='full centered-text'>
+        <div class='row'>
+          <a href="/"><img src="/images/logo-bordered.png" alt="Prism Web Design" /></a>
+        </div>
+      </div>
+      <div class="four spacing"></div>
+      {% endif %}
+
       {{ content }}
     </div>
 

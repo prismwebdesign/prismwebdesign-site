@@ -1,6 +1,16 @@
-- image: images/@stock/client-1.png
-- image: images/@stock/client-2.png
-- image: images/@stock/client-3.png
-- image: images/@stock/client-4.png
-- image: images/@stock/client-5.png
-- image: images/@stock/client-6.png
+- image: images/clients/logo-blue.png
+  name: CrowdThreads
+- image: images/clients/index.png
+  name: Nicole Baas
+  klass: invert tall-logo
+- image: images/clients/dps-logo-light.png
+  name: Dog and Pony Studios
+- image: images/clients/LHN-Horiz-Left_Color1.png
+  name: Life + Health
+- image: images/clients/logo.png
+  name: 3DPrinterPro
+- image: images/clients/su-logo2.png
+  name: SimpleUpdates.com
+  klass: invert
+- image: images/clients/global-donor-egg-bank-logo.png
+  name: Global Donor Egg Bank

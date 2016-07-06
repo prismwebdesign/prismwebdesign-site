@@ -9,4 +9,21 @@
 	color:black;
 }
 
+.modGallery ul.gallery li {
+}
+
+.modGallery ul.gallery li a {
+  height: 0;
+  padding-bottom: 67%;
+}
+
+// Tools
+@import "mixins";
+
+// Page-specific Styles
 @import "home";
+@import "blog";
+@import "portfolio-page";
+@import "contact";
+@import "services";
+@import "about";
