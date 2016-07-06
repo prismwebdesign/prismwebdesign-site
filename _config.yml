@@ -11,7 +11,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: macwebdzyne
 github_username:  prismwebdesign
-consult_url: https://prismwebdesign.acuityscheduling.com/schedule.php
+consult_url: https://prismwebdesign.acuityscheduling.com/schedule.php?appointmentType=1477312
 include_header: false
 accounts:
   - name: Twitter
